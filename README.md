@@ -1,4 +1,3 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=22916363&assignment_repo_type=AssignmentRepo)
 # Student Grading System – Primer
 
 **This is an individual exercise.**
@@ -23,15 +22,15 @@ The following repositories contain simple exercises which should help you with t
 
 ## Setup (do this first)
 
-1. **Install Docker**  
-   Download and install from https://docs.docker.com/get-docker/  
+1. **Install Docker**
+   Download and install from https://docs.docker.com/get-docker/
    Ensure Docker is running whenever you are developing, this has been tested with the latest version of Docker Desktop (4.60.1)
 
-2. **Clone this repo**  
+2. **Clone this repo**
    If you have not used Git before, refer to the Git primer.
 
-3. **Use your own GitHub repo for submission**  
-   - Create a **private** repo (e.g. `student-grading-primer`) on your GitHub account. **Do not fork** this repo.  
+3. **Use your own GitHub repo for submission**
+   - Create a **private** repo (e.g. `student-grading-primer`) on your GitHub account. **Do not fork** this repo.
    - Clone this (course) repo, then point the remote to your repo:
      ```bash
      git remote set-url origin git@github.com:YOUR_USERNAME/YOUR_REPO_NAME.git
@@ -121,7 +120,7 @@ Implement the backend from the provided **stubs**. Each route in **`backend/app.
 
 Do not modify **`backend/db.py`**. You are provided with abstract methods to fetch and insert data into the DB. ie. `get_all_students()`, `get_student_by_id(id)`, `insert_student(name, course, mark)`, etc.
 
-The requirement is that all data is persistent. You can utilise additional data structures/methods to achieve this. 
+The requirement is that all data is persistent. You can utilise additional data structures/methods to achieve this.
 
 You must also add error handling where appropriate. For simplicity all errors will return a 404 code, and success will return 200.
 
@@ -141,8 +140,8 @@ Identify **one edge case** not fully specified in the primer spec, and document 
 
 ### Check your work
 
-- Run: `docker compose up --build`  
-- Run the public automark: `docker compose --profile debug up --build automark`  
+- Run: `docker compose up --build`
+- Run the public automark: `docker compose --profile debug up --build automark`
 - You should see **`SANITY CHECK PASSED`**. Note that this is only a dry-run, and a test suite will be run against your work on the submission date.
 
 ---
@@ -210,11 +209,11 @@ From the project root:
 docker compose up --build
 ```
 
-- Frontend: http://localhost:8080  
-- Backend: http://localhost:5000  
-- Health: http://localhost:5000/  
-- Students: http://localhost:5000/students  
-- Stats: http://localhost:5000/stats  
+- Frontend: http://localhost:8080
+- Backend: http://localhost:5000
+- Health: http://localhost:5000/
+- Students: http://localhost:5000/students
+- Stats: http://localhost:5000/stats
 
 ---
 
